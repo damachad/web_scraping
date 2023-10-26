@@ -1,0 +1,142 @@
+/* Estilos genéricos */
+body {
+  background-color: #8ba4bb;
+  color: #f8f8fd;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+.material-icons {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 35px;
+}
+
+.all-content {
+  padding-left: 25px;
+  padding-right: 25px;
+  grid-template-areas:
+    'sidebar header'
+    'sidebar main';
+  height: 90vh;
+}
+
+.header {
+  grid-area: header;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.brand {
+  margin-top: 4rem;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.container-main {
+  padding: 20px 20px;
+  color: rgba(255, 255, 255, 0.95);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#chart-selector {
+  background-color: #0f1829;
+  color: #f5f7ff;
+  border: 1px solid #55596e;
+  border-radius: 10px;
+  padding: 5px; 
+  font-size: 16px;
+  width: 150px;
+  outline: none; 
+}
+
+#chart-selector option {
+  background-color: #0f1829;
+  color: #f5f7ff; 
+  font-size: 16px;
+}
+.charts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 50rem;
+  margin-top: 60px;
+  background-color: #0f1829;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+}
+
+h3{
+  text-align: center; 
+  padding: auto;
+}
+
+/*#media-chart {
+  width: 1600 ;
+  height: 400;
+  display: block;
+  margin: auto;
+  background-color: #0f1829;
+  margin-bottom: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  -webkit-column-break-inside: avoid;
+  border-radius: 20px;
+  box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+}*/
+
+.media-chart {
+  width: 52rem ;
+  height: 400;
+  display: block;
+  background-color: #0f1829;
+  margin-bottom: 15px;
+  padding: 6px;
+  box-sizing: border-box;
+  -webkit-column-break-inside: avoid;
+  border-radius: 20px;
+  box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+}
+
+#wine-selector {
+  background-color: #0f1829;
+  color: #f5f7ff;
+  border: 1px solid #55596e;
+  border-radius: 10px;
+  padding: 5px; 
+  font-size: 16px;
+  width: 12rem;
+  outline: none; 
+}
+
+#wine-selector option {
+  background-color: #0f1829;
+  color: #f5f7ff; 
+  font-size: 16px;
+}
+.promo-container
+{
+  background-color: #0f182946;
+  color: #f5f7ff; 
+  font-size: 16px;
+  border-radius: 10px;
+  height: 34rem;
+  margin-bottom: 2rem;
+  width: 52rem;
+}
+.label 
+{
+  font-size: 14px;
+  padding: 2rem;
+}
+.media--chart
+{
+  margin: 1rem;
+}
+
+

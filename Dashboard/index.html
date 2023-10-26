@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="all-content">
+      <header class="header">
+        <nav>
+          <div class="brand">
+            <img src="images/1694710168-logosogrape.svg" alt="Sogrape Logo" width=150 height=100>
+          </div>
+        </nav>
+      </header>
+      <main class="container-main">
+        <div class="charts">
+          <div class="chart-pair">
+          <div class="charts-card">
+              <div id="area-chart-orig"></div>
+          </div>
+          <div class="charts-card">
+            <div id="area-chart-spark"></div>
+          </div>
+        </div>
+          <div class="chart-pair">
+          <div class="charts-card">
+            <div class ="chart-title">
+            </div>
+            <div id="area-chart-papa"></div>
+          </div>
+          <div class="charts-card">
+            <div id="area-chart-trinca"></div>
+          </div>
+        </div> 
+        <label for="chart-selector">Choose a wine</label>
+        <select id="chart-selector">
+          <option value="chart-all" selected>All</option>
+          <option value="chart-orig">Mateus Original</option>
+          <option value="chart-spark">Mateus Sparkling</option>
+          <option value="chart-papa">Papa Figos</option>
+          <option value="chart-trinca">Trinca Bolotas</option>
+        </select>
+      </div>
+      <div class="promo-container">
+        <h3>Promoções dos Vinhos</h3>
+        <canvas id="promo-chart" width="400" height="200"></canvas>
+        <div class="promo--chart">
+          <div class="promo--chart">
+            <label class="label" for="wine-selector">Escolha um vinho:</label>
+            <select id="wine-selector">
+              <option value="Mateus Rosé Original" selected>Mateus Rosé Original</option>
+              <option value="Mateus Rosé Sparkling">Mateus Rosé Sparkling</option>
+              <option value="Papa Figos">Papa Figos</option>
+              <option value="Trinca Bolotas">Trinca Bolotas</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      
+      <div class="media-chart">
+        <h3 id="title-bar-charts"> Preço médio (mês)</h3>
+        <canvas id="media-chart" width="1600" height="400"></canvas>
+        <div class="media--chart">
+          <label for="wine-selector">Choose a wine:</label>
+          <select id="wine-selector">
+            <option value="Mateus Rosé Original">Mateus Rosé Original</option>
+            <option value="Mateus Rosé Sparkling">Mateus Rosé Sparkling</option>
+            <option value="Papa Figos">Papa Figos</option>
+            <option value="Trinca Bolotas">Trinca Bolotas</option>
+          </select>
+        </div>
+      </div>
+      </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script_gl.js"></script>
+    <script src="js/script_med.js"></script>
+    <script src="js/promo.js"></script>
+  </body>
+</html>
